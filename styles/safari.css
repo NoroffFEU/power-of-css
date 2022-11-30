@@ -1,0 +1,80 @@
+@font-face {
+  font-family: "Tribeca";
+  src: url("../fonts/Tribeca.ttf") format("Truetype");
+}
+
+body {
+  font-family: Quicksand, Arial, Helvetica, sans-serif;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+h1,
+h2 {
+  font-family: "Tribeca", "Open Sans", Verdana, sans-serif;
+}
+
+header {
+  background: rgb(0, 71, 0) url("../images/leaves.png") no-repeat bottom;
+  background-size: cover;
+  color: #fff;
+  padding: 20px;
+}
+
+main {
+  background: #fff;
+}
+
+.welcome {
+  text-align: center;
+  background: rgb(0, 71, 0);
+  padding: 20px;
+}
+
+.welcome a {
+  background-color: #fff;
+  color: rgb(0, 71, 0);
+  padding: 10px 20px;
+  display: block;
+  width: 200px;
+  margin: auto;
+  transition: background-color 0.5s;
+}
+
+.welcome a:hover {
+  background-color: rgb(219, 231, 219);
+}
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.featured h2 {
+  grid-column: 1 / -1;
+}
+
+.featured div {
+  background: rgb(219, 231, 219);
+  position: relative;
+  min-height: 140px;
+}
+
+.featured div h3 {
+  position: absolute;
+  transform: rotate(90deg);
+  transform-origin: 0 0;
+  background: rgb(0, 71, 0);
+  color: #fff;
+  left: 30px;
+  height: 30px;
+  min-width: 140px;
+  margin: 0px;
+  text-align: center;
+}
+
+.featured div p {
+  margin-left: 40px;
+}
